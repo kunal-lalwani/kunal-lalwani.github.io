@@ -8,8 +8,10 @@
  * Website: http://themes.3rdwavemedia.com/
 */
 
+
 // Define theme colour scheme
-$theme-color-primary: #3582C4;
+$theme-color-primary: #434E5E;
+
 $theme-text-color-primary: #434E5E;
 $theme-text-color-secondary: lighten($theme-text-color-primary, 10%);
 $theme-text-color-light: lighten($theme-text-color-primary, 40%);
@@ -79,9 +81,9 @@ a.theme-btn-on-bg, .theme-btn-on-bg {
 .resume-header {
 	background: $theme-color-primary;
 	color: rgba(256, 256, 256, 0.9);
-	height: 250px;
+	height: 220px;
 	.picture {
-		width: 250px;
+		width: 220px;
 	}
 		
 	.name {
@@ -244,4 +246,19 @@ a.theme-btn-on-bg, .theme-btn-on-bg {
 	}
 }
 
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    .resume-wrapper {
+	    padding-top: 0;
+    }
+	
+	.resume-header {
+		height: auto;
+	}
+	.resume-header .picture {
+		width: 120px;
+		@include border-radius(4px);
+	}
 
+	
+}
